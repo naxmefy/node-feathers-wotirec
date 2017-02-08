@@ -11,7 +11,7 @@
   "logo": "http://feathersjs.com/img/feathers-circle-logo-grey.png",
   "success_url": "/",
   "scripts": {
-    "postdeploy": ""
+    "postdeploy": "echo postdeploy"
   },
   "env": {
     "FEATHERS_AUTH_SECRET": {
