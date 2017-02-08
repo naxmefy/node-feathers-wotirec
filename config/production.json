@@ -1,6 +1,6 @@
 {
-  "host": "node-feathers-wotirec-app.feathersjs.com",
-  "port": 80,
+  "host": "",
+  "port": "PORT",
   "mongodb": "DATABASE_URL",
   "public": "../public/",
   "auth": {
