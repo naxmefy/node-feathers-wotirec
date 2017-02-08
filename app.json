@@ -1,0 +1,51 @@
+{
+  "name": "node-feathers-wotirec",
+  "description": "node feathers work time recorder app",
+  "keywords": [
+    "node",
+    "feathers",
+    "wotirec"
+  ],
+  "website": "https://github.com/naxmefy/node-feathers-wotirec",
+  "repository": "https://github.com/naxmefy/node-feathers-wotirec",
+  "logo": "http://feathersjs.com/img/feathers-circle-logo-grey.png",
+  "success_url": "/",
+  "scripts": {
+    "postdeploy": ""
+  },
+  "env": {
+    "FEATHERS_AUTH_SECRET": {
+      "description": "A secret key for verifying the integrity of signed cookies.",
+      "generator": "secret"
+    },
+    "WEB_CONCURRENCY": {
+      "description": "The number of processes to run.",
+      "value": "1"
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "free"
+    }
+  },
+  "image": "heroku/nodejs",
+  "addons": [
+    {
+      "plan": "mongolab:sandbox",
+      "as": "MONGO"
+    }
+  ],
+  "buildpacks": [
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-nodejs"
+    }
+  ],
+  "environments": {
+    "test": {
+      "scripts": {
+        "test": "npm run test"
+      }
+    }
+  }
+}
